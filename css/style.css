@@ -259,6 +259,10 @@ header.site-header {
   font-weight: 600;
   letter-spacing: 0.02em;
 }
+.trust-strip .trust-label {
+  color: #fff;
+  font-weight: 800;
+}
 
 /* ===== Cards / Grids ===== */
 .grid {
