@@ -154,11 +154,12 @@ header.site-header {
   gap: 10px;
   font-family: "Rubik", sans-serif;
   font-weight: 800;
-  font-size: 1.3rem;
+  font-size: clamp(1.45rem, 1.1rem + 1.4vw, 1.85rem);
+  line-height: 1.15;
   color: var(--ink);
 }
 .brand .mark {
-  height: 38px;
+  height: clamp(46px, 2.2em, 62px);
   width: auto;
   flex-shrink: 0;
 }
@@ -166,7 +167,7 @@ header.site-header {
   display: block;
   font-family: "Heebo", sans-serif;
   font-weight: 500;
-  font-size: 0.68rem;
+  font-size: 0.52em;
   color: var(--text-soft);
 }
 .nav-links {
