@@ -404,25 +404,6 @@ footer p { color: #b9cdca; }
   .sticky-call { display: none; }
 }
 
-/* Floating desktop call button */
-.fab-call {
-  position: fixed;
-  bottom: 28px;
-  left: 28px;
-  z-index: 80;
-  background: var(--cta);
-  color: #fff;
-  padding: 16px 24px;
-  border-radius: 999px;
-  font-weight: 800;
-  box-shadow: 0 12px 28px -8px rgba(255,107,53,0.6);
-  display: none;
-  align-items: center;
-  gap: 10px;
-  transition: transform .15s ease;
-}
-.fab-call:hover { transform: translateY(-3px); color:#fff; }
-@media (min-width: 900px) { .fab-call { display: inline-flex; } }
 
 body { padding-bottom: 68px; }
 @media (min-width: 900px) { body { padding-bottom: 0; } }
@@ -581,7 +562,7 @@ input:focus-visible {
   cursor: pointer;
   box-shadow: 0 8px 20px -6px rgba(0,0,0,0.4);
 }
-@media (min-width: 900px) { .a11y-toggle { bottom: 100px; } }
+@media (min-width: 900px) { .a11y-toggle { bottom: 28px; } }
 
 .a11y-panel {
   position: fixed;
@@ -597,6 +578,7 @@ input:focus-visible {
   display: none;
 }
 .a11y-panel.open { display: block; }
+@media (min-width: 900px) { .a11y-panel { bottom: 92px; } }
 .a11y-panel h2 { font-size: 1rem; margin-bottom: 12px; }
 .a11y-panel .row {
   display: flex;
